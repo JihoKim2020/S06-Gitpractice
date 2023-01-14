@@ -1,0 +1,69 @@
+BASICS
+
+    깃허브 시작하기
+        git init
+
+    깃허브 기본 명령어
+        git status
+        git log
+        git branch
+    
+
+PUSH&PULL
+    깃허브 연결하기
+        git remote add origin https://github.com/JihoKim2020/githubpractice.git
+    
+    깃허브에서 프로젝트 가져오기
+        git pull https://github.com/JihoKim2020/githubpractice.git
+
+    깃허브에 프로젝트 업로드
+        git push origin main
+
+    
+BRANCH
+
+    브랜치 확인
+        git branch
+
+    새 브랜치 생성
+        git branch newbranch
+
+    Branch 이름 바꾸기
+        git branch -M newbranchname
+
+    다른 branch로 넘어가기
+        git checkout branchname
+
+    브랜치 삭제하기
+        git branch -D branchname
+
+
+
+COMMIT
+
+    변경 내용 확인
+        git diff
+
+    다 변경한거 저장하기
+        git add .
+        git commit -m "I just added test.txt"
+
+    변경 삭제하기 (마지막 커밋 단계를 삭제함)
+        git reset --hard HEAD~1
+
+    변경 되돌리기 (브랜치를 마지막 커밋 단계로 되돌림)
+        git checkout -- .
+
+    변경 되돌리기(파일 하나만 되돌림)
+        git reset -- filename.txt 
+
+    
+
+수정자 정보
+    git config --global user.name
+    git config --global user.name "변경할 이름"
+    git config --global user.email "변경할 이메일"
+
+
+
+
